@@ -26,8 +26,12 @@
   --pecan-xanthia-max-width: none;
   --pecan-xanthia-max-height: none;
   --pecan-xanthia-min-width: none;
-  --pecan-xanthia-min-height: calc(var(--pecan-height) - calc(var(--pecan-border) * 2));
-  --pecan-xanthia-image-size: calc(var(--pecan-height) - calc(var(--pecan-border) * 2));
+  --pecan-xanthia-min-height: calc(
+    var(--pecan-height) - calc(var(--pecan-border) * 2)
+  );
+  --pecan-xanthia-image-size: calc(
+    var(--pecan-height) - calc(var(--pecan-border) * 2)
+  );
   --pecan-chunkwm-bar: 20px;
   /* opacity */
   --pecan-opacity: 0;
@@ -53,13 +57,18 @@
   --pecan-padding-left: 5px;
   --pecan-padding-right: var(--pecan-padding-left);
   --pecan-padding-v: var(--pecan-padding-left);
-  --pecan-xanthia-padding-h: calc(var(--pecan-xanthia-image-size) + var(--pecan-xanthia-image-padding-h));
+  --pecan-xanthia-padding-h: calc(
+    var(--pecan-xanthia-image-size) + var(--pecan-xanthia-image-padding-h)
+  );
   --pecan-xanthia-padding-v: calc(var(--pecan-border) + var(--pecan-padding-v));
   --pecan-xanthia-image-padding-v: var(--pecan-xanthia-padding-v);
-  --pecan-xanthia-image-padding-h: calc(var(--pecan-padding-right) + calc(var(--pecan-text-padding) * 4) + 14ch + calc(3 * var(--pecan-border)));
+  --pecan-xanthia-image-padding-h: calc(
+    var(--pecan-padding-right) + calc(var(--pecan-text-padding) * 4) + 14ch +
+      calc(3 * var(--pecan-border))
+  );
   /* shadow */
-  --pecan-shadow: 0px 4px 10px 4px rgba(0,0,0,0.15);
-  --pecan-shadow-inner: 0px 1px 1px 1px rgba(0,0,0,0.15);
+  --pecan-shadow: 0px 4px 10px 4px rgba(0, 0, 0, 0.15);
+  --pecan-shadow-inner: 0px 1px 1px 1px rgba(0, 0, 0, 0.15);
   --pecan-xanthia-shadow: var(--pecan-shadow-inner);
   --pecan-xanthia-image-shadow: var(--pecan-shadow-inner);
   /* border */
@@ -75,7 +84,9 @@
   --pecan-font: SF Mono, Menlo, Monospace;
   --pecan-font-size: 11px;
   --pecan-font-style: regular;
-  --pecan-line-height: calc(var(--pecan-height) - calc(var(--pecan-border) * 2));
+  --pecan-line-height: calc(
+    var(--pecan-height) - calc(var(--pecan-border) * 2)
+  );
   --pecan-text-padding: 2ch;
   --webkit-font-smoothing: none;
   --pecan-xanthia-font: var(--pecan-font);
@@ -174,7 +185,10 @@
   padding: 0 var(--pecan-text-padding);
   margin-top: calc(var(--pecan-border) + var(--pecan-padding-v));
   margin-bottom: calc(var(--pecan-border) + var(--pecan-padding-v));
-  margin-left: calc(var(--pecan-padding-left) + calc(var(--pecan-text-padding) * 2) + 1ch + calc(var(--pecan-border) * 2));
+  margin-left: calc(
+    var(--pecan-padding-left) + calc(var(--pecan-text-padding) * 2) + 1ch +
+      calc(var(--pecan-border) * 2)
+  );
   line-height: var(--pecan-line-height);
   border-top-left-radius: var(--pecan-border-radius-inner);
   border-top-right-radius: var(--pecan-border-radius-inner);
@@ -223,7 +237,10 @@
   bottom: var(--pecan-alignment-bottom);
   left: auto;
   margin-top: calc(var(--pecan-padding-v) + var(--pecan-border));
-  margin-right: calc(var(--pecan-padding-right) + calc(var(--pecan-text-padding) * 2) + 9ch + calc(var(--pecan-border) * 2));
+  margin-right: calc(
+    var(--pecan-padding-right) + calc(var(--pecan-text-padding) * 2) + 9ch +
+      calc(var(--pecan-border) * 2)
+  );
   margin-bottom: calc(var(--pecan-padding-v) + var(--pecan-border));
   line-height: var(--pecan-line-height);
   border-top-left-radius: var(--pecan-border-radius-inner);

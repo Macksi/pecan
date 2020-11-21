@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+ps cax | grep yabai > /dev/null
+if [ $? -eq 0 ]; then
+  LABEL=$(/usr/local/bin/yabai -m query --windows --window | /usr/local/bin/jq -r .title)
+  if [ -n "$LABEL" ]; then
+    echo $LABEL
+  fi
+else
+  echo ""
+fi
